@@ -12,13 +12,33 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    
 }
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #9e51ff;
+    border-radius: 6px;
+}
+
+header.sticky{
+   
+}
+
+.background{
+    background: rgba(39, 39, 39, 0.4);
+}
+
+
 .wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 110vh;
-    background: rgba(39, 39, 39, 0.4);
+    
 }
 .nav{
     position: fixed;
@@ -178,4 +198,41 @@ header{
 }
 .two label a:hover{
     text-decoration: underline;
+}
+
+/* about */
+
+.about{
+    color: #fff;
+    margin-top: 290px;
+    padding-bottom: 250px;
+}
+
+.about h2 {
+    margin-left: 470px;
+    margin-bottom: -240px;
+}
+
+.about div{
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about div p{
+    margin-top: -100px;
+    text-align: justify;
+    padding: 370px;
+}
+
+.about p a{
+    color: #9e51ff;
+    text-decoration: none;
+    transition: 0.2s;
+    font-weight: bold;
+}
+
+.about p a:hover{
+    color: #fff;
 }

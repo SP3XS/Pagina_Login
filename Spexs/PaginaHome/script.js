@@ -20,3 +20,20 @@ function register(){
     x.style.opacity = 0;
     y.style.opacity = 1;
 }
+
+window.addEventListener('scroll', function(){
+    var header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 0);
+});
+
+// Seleciona o link "About" e a seção "about"
+const aboutLink = document.querySelector('.nav-menu a[href="#about-section"]');
+const aboutSection = document.getElementById('about-section');
+
+// Adiciona um evento de clique ao link
+aboutLink.addEventListener('click', (event) => {
+    event.preventDefault();
+    aboutSection.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Garante que o topo da seção seja visível
+});
+
+
