@@ -8,7 +8,7 @@ function cadastrar(){
 
     fetch("http://localhost:8080/usuarios",
     {
-        Headers: {
+        headers: {
             "Accept":"application/json",
             "Content-Type":"application/json"
         },
